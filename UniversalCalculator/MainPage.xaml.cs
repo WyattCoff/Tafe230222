@@ -90,5 +90,15 @@ namespace Calculator
 				Utils.Utils.handleBackspace();
 			}
 		}
+
+		private void exitButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(UniversalCalculatorMainPage));
+		}
+
+		private void primaryDisplay_SelectionChanged(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
