@@ -33,6 +33,12 @@ namespace Calculator
 			this.Frame.Navigate(typeof(MainPage));
 		}
 
+		private void Mortgage_Calculator_Page(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(Mortgage_Calculator_Page));
+		}
+
+
 	}
 
 }

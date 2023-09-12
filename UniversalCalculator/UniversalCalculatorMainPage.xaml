@@ -46,7 +46,7 @@
 
 		<StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
 			<TextBlock Width="100"></TextBlock>
-			<Button Width="500" Height="182" FontSize="30">Mortgage Calculator</Button>
+			<Button Click="Mortgage_Calculator_Page" Width="500" Height="182" FontSize="30">Mortgage Calculator</Button>
 		</StackPanel>
 
 		<StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
