@@ -9,7 +9,7 @@
 	</Page.Resources>
 
 	<!-- TODO -->
-	<Grid Style="{StaticResource GridStyle}" Margin="4,32,4,4" Background="DeepSkyBlue">
+	<Grid Style="{StaticResource GridStyle}" Margin="4,32,4,4">
 		<!-- definitions -->
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="*" />
@@ -27,13 +27,9 @@
 		</Grid.RowDefinitions>
 
 		<!-- TODO -->
-		<StackPanel Grid.Row="0" Grid.Column="4">
-			<Button Click="exitButton_Click" Height="72" Width="274" Content="Main Menu" FontSize="25"/>
-        </StackPanel>
-		
 		<TextBlock x:FieldModifier="public" x:Name="secondaryDisplay" Style="{StaticResource SmallTextBlockStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
 
-		<TextBlock x:FieldModifier="public" x:Name="primaryDisplay" Style="{StaticResource BigTextBlockStyle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" SelectionChanged="primaryDisplay_SelectionChanged">
+		<TextBlock x:FieldModifier="public" x:Name="primaryDisplay" Style="{StaticResource BigTextBlockStyle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
 				<FlyoutBase.AttachedFlyout>
 					<Flyout FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
 						<TextBlock x:FieldModifier="public" x:Name="errorDisplay" Style="{StaticResource FlyoutTextBlockStyle}" />
@@ -61,7 +57,7 @@
 		<Button Style="{StaticResource ButtonBlueStyle}" Grid.Row="5" Grid.Column="2" Click="handleEqualButtonClick">
 			=
 		</Button>
-		<Button Style="{StaticResource ButtonBlueStyle}" Grid.Row="5" Grid.Column="0" Click="handleClearButtonClick" >
+		<Button Style="{StaticResource ButtonBlueStyle}" Grid.Row="5" Grid.Column="0" Click="handleClearButtonClick">
 			C
 		</Button>
 	</Grid>
