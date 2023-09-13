@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="Calculator.UniversalCalculatorMainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="DeepSkyBlue">
+
+
+
+			<!--Rows of the grid-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="208"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <!--columns of the grid-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="390"></ColumnDefinition>
+            <ColumnDefinition Width="685"></ColumnDefinition>
+            <ColumnDefinition Width="635"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Row="0" Grid.Column="2">
+			<Image Source="/Assets/abacus.PNG" Height="150" Width="200"/>
+		</StackPanel>
+
+		
+		<StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+			<TextBlock Width="100"></TextBlock>
+			<TextBlock Text="Universal Calculator" FontSize="50" FontWeight="Bold" Height="84" Foreground="#f3af1b"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+			<TextBlock Width="100"></TextBlock>
+			<Button Click="mathsCalculatorButton_Click" Width="500" Height="182" FontSize="30"> Maths Calculator</Button>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+			<TextBlock Width="100"></TextBlock>
+			<Button Click="Mortgage_Calculator_Page" Width="500" Height="182" FontSize="30">Mortgage Calculator</Button>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
+			<TextBlock Width="100"></TextBlock>
+			<Button Click="Currency_Conversion_Page" Width="500" Height="182" FontSize="30">Currency Converter</Button>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
+			<TextBlock Width="100"></TextBlock>
+			<Button Click="ExitBtn_Click" Width="500" Height="182" FontSize="30">Exit</Button>
+		</StackPanel>
+		
+	</Grid>
+</Page>
