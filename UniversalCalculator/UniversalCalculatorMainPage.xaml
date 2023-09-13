@@ -51,12 +51,12 @@
 
 		<StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
 			<TextBlock Width="100"></TextBlock>
-			<Button Width="500" Height="182" FontSize="30">Currency Converter</Button>
+			<Button Click="Currency_Conversion_Page" Width="500" Height="182" FontSize="30">Currency Converter</Button>
 		</StackPanel>
 
 		<StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
 			<TextBlock Width="100"></TextBlock>
-			<Button Width="500" Height="182" FontSize="30">Exit</Button>
+			<Button Click="ExitBtn_Click" Width="500" Height="182" FontSize="30">Exit</Button>
 		</StackPanel>
 		
 	</Grid>

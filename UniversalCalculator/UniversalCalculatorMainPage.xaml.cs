@@ -38,6 +38,15 @@ namespace Calculator
 			this.Frame.Navigate(typeof(Mortgage_Calculator_Page));
 		}
 
+		private void Currency_Conversion_Page(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyConversionCalculator));
+		}
+
+		private void ExitBtn_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Exit();
+		}
 
 	}
 

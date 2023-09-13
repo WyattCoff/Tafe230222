@@ -149,7 +149,7 @@ namespace Calculator
 					}
 					break;
 
-				case "BritishPound":
+				case "British Pound":
 					switch (toCurrency)
 					{
 						case "US Dollar":
@@ -170,7 +170,7 @@ namespace Calculator
 					}
 					break;
 
-				case "Indian":
+				case "Indian Rupee":
 					switch (toCurrency)
 					{
 						case "US Dollar":
